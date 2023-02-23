@@ -1,10 +1,29 @@
+:root {
+    --sfont: 24px;
+    --fontfam: Monospace;
+}
 .bio {
-    font-family: monospace;
-    font-size: 18px;
+    font-family: var(--fontfam);
+    font-size: var(--sfont);
+    width: calc(100% - 300px);
+}
+div.center {
+    text-align: center;
+}
+.summary {
+    font-family: var(--fontfam);
+    font-size: var(--sfont);
+    width: calc(100% - 300px);
+    line-height: 3em;
+}
+.text {
+    font-family: var(--fontfam);
+    font-family: var(--fontfam);
+    font-size: var(--sfont);
     width: calc(100% - 300px);
 }
 body {
-    background-color: rgb(210,210,210);
+    background-color: rgb(255,255,255);
 }
 .ig-icon {
     font-size: 50px;
@@ -21,6 +40,26 @@ body {
     font-size: 50px;
     color:0;
     text-decoration: none;
+}
+.input-row {
+    /* display: flex; */
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box
+}
+label {
+    margin-bottom: 6px;
+    display: block;
+    color: 0;
+}
+button {
+    background: none;
 }
 * {
     margin: 0;
@@ -40,11 +79,11 @@ ul li {
     line-height: 50px; 
 }
 ul li a {
-    font-weight: bold;
+    /* font-weight: bold; */
     display: block;
     text-decoration: none;
     font-size: 28px;
-    font-family: monospace;
+    font-family: var(--fontfam);
     color: #000000;
     padding: 0 20px;
     transition: color 0.4s;
