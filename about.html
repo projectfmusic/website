@@ -4,48 +4,18 @@
         <title>Project F</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <div id="navbar"></div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+        $(function(){
+        $("#navbar").load("navbar.html");
+        });
+        </script>
     </head>
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html">
-                    Home
-                </a>
-            </li>
-            <li>
-                <a href="about.html">
-                    About
-                </a>
-            </li>
-            <li>
-                <a href="contact.html">
-                    Contact
-                </a>
-            </li>
-            <div class = "social">
-                <li>
-                    <a class="ig-icon" href="https://www.instagram.com/projectfmusic/" target="_blank">
-                        <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
-                </li>
-                <li>
-                    <a class="yt-icon" href="https://www.youtube.com/@projectf5886/featured" target="_blank">
-                        <ion-icon name="logo-youtube"></ion-icon>
-                    </a>
-                </li>  
-                <li>
-                    <a class="sfy-icon" href="https://open.spotify.com/artist/5JB8UQ3XPayY9eefxWnOsF?si=v4sxkWsASrC_yInVSXWWJg" target="_blank">
-                        <i class="fa fa-spotify menu-icon"></i>
-                    </a>
-                </li>
-            </div>
-            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        </ul>
-    </nav>
     <body>
         <div id="about">
             <img src="self_portrait.JPG" width="240" height="240">
+            <p class="text">Welcome to my webpage, which is still under development.</p>
             <details>
                 <summary class = 'summary'>An informal "About" (I honestly prefer this intro a lot more. It's concise and accurate.)</summary>
                 <p class = 'text'>i'm a college student who doesn't know whether he wants to be a DSP engineer that knows music or a musician that knows DSP</p>
